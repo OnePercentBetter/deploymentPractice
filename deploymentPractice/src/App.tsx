@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react'
-import { io, NodeWebSocket, Socket} from "socket.io-client"
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { io, Socket} from "socket.io-client"
 import './App.css'
 
 const BACKEND_URL = "localhost:3000"
