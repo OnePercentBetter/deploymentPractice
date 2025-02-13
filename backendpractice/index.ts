@@ -30,7 +30,7 @@ io.on('connection', (socket) => {
   socket.on("increment", ({count})  => {
     console.log(`The current count is ${count}`)
     let newCount = count + 1;
-    io.emit('result', { newCount  x});
+    io.emit('result', { newCount });
   });
 
   socket.on('disconnect', () => {
