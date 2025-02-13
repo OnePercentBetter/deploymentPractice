@@ -27,7 +27,7 @@ const io = new Server(server, {
 io.on('connection', (socket) => {
   console.log("Received Connection!");
 
-  socket.on("increment", ({count})  => {
+  socket.on("increment", (count)  => {
     console.log(`The current count is ${count}`)
     let newCount = count + 1;
     io.emit('result', { newCount });

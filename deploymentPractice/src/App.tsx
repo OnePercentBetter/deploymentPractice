@@ -20,7 +20,7 @@ function App() {
     return () => {
       newSocket.disconnect();
     }
-  })
+  }, [])
 
   const handleButtonClick = () => {
     if (socket) {
