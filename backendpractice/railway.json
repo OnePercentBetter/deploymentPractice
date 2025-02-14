@@ -1,0 +1,18 @@
+{
+  "builds": [
+    {
+      "src": "index.ts",
+      "use": "@railway/app-function@0.3.0",
+      "config": {
+        "runtime": "bun",
+        "entrypoint": "index.ts"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/.*",
+      "dest": "/"
+    }
+  ]
+} 

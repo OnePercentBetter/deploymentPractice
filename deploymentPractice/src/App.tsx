@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { io, Socket} from "socket.io-client"
 import './App.css'
 
-const BACKEND_URL = "localhost:3000"
+const BACKEND_URL = "https://makeshift-legs-production.up.railway.app"
 
 function App() {
   const [count, setCount] = useState(0)

@@ -2,13 +2,23 @@
   "name": "backendpractice",
   "module": "index.ts",
   "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest"
+  "scripts": {
+    "start": "bun run ./index.ts",
+    "build": "tsc",
+    "dev": "bun run ./index.ts"
   },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "typescript": "^5.2.2",
+    "ts-node": "^10.9.2"
   },
   "dependencies": {
-    "socket.io": "^4.8.1"
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "cors": "^2.8.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.2.2"
   }
 }

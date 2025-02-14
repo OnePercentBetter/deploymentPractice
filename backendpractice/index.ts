@@ -5,8 +5,12 @@ import cors from "cors";
 
 const app = express();
 
+const PORT = process.env.PORT || 3000;
+const CORS_ORIGIN = process.env.CORS_ORIGIN || 'https://relaxed-sprinkles-2c088e.netlify.app';
+
+
 app.use(cors({
-  origin: '*',
+  origin: CORS_ORIGIN,
   methods: ['GET', 'POST']
 }));
 
@@ -15,7 +19,6 @@ app.get('/', (req, res) => {
 });
 
 const server = http.createServer(app);
-const PORT = process.env.PORT || 10000;
 
 const io = new Server(server, {
   cors: {
